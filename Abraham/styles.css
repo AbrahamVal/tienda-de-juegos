@@ -1,0 +1,167 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #ffffff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: linear-gradient(90deg, #2196F3, #0D47A1);
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+header p {
+  margin: 5px 0 0;
+  font-size: 1.2em;
+}
+
+nav {
+  background: #f5f5f5;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 2px solid #ddd;
+}
+
+nav a {
+  color: #0D47A1;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #2196F3;
+}
+
+section {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 1000px;
+  background: #fafafa;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+section h2 {
+  color: #2196F3;
+  margin-bottom: 15px;
+}
+
+section img {
+  width: 200px;
+  border-radius: 8px;
+  margin: 10px;
+  transition: transform 0.3s;
+}
+
+section img:hover {
+  transform: scale(1.05);
+}
+
+section h3 {
+  color: #E91E63;
+  margin: 5px 0 15px;
+}
+
+.videojuegos, .consolas, .accesorios {
+  display: none;
+  margin-top: 10px;
+}
+
+.categorias:has(select option[value="videojuegos"]:checked)
+.videojuegos{
+    display: block;
+}
+
+.categorias:has(select option[value="consolas"]:checked)
+.consolas{
+    display: block;
+}
+
+.categorias:has(select option[value="accesorios"]:checked)
+.accesorios{
+    display: block;
+}
+
+.categorias {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.categorias label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.categorias select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #fff;
+  color: #333;
+}
+
+#Comprar {
+  background: #fff;
+  color: #333;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+#Comprar h3 {
+  text-align: center;
+  color: #2196F3;
+  margin-bottom: 20px;
+}
+
+#Comprar label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#Comprar input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+#Comprar button {
+  width: 100%;
+  padding: 12px;
+  background: #2196F3;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#Comprar button:hover {
+  background: #1976D2;
+}
+
+footer {
+  background: #f5f5f5;
+  text-align: center;
+  padding: 15px;
+  color: #333;
+  margin-top: 30px;
+  border-top: 2px solid #ddd;
+}
